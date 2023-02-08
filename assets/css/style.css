@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background-box{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+}
+.main{
+    background-color: rgb(198, 129, 27);
+    width: 300px;
+    padding: 20px; 
+  
+}
+.main input{
+    margin: 20px;
+}
+.div{
+    margin-bottom:20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+
+</head>
+<style>
+    .hello2 {
+        background-color: red;
+        /* display:none; */
+        
+    }
+    .hello {
+        background-color: green;
+        /* display:none; */
+    }
+</style>
+
+<body>
+    <!-- <button>off</button> -->
+    <!-- <button>on</button> -->
+    <h2>First Event</h2>
+    <P>Add a new .HTML.Element.</P>
+    <P id="para">this pargraph</P>
+    <div class="hello2" id="print">
+        <img src="/assets/image_1.png" alt="">
+        <img src="/assets/image_2.png" alt="">
+
+    </div>
+    <!-- <div class="hello1" >
+    </div> -->
+    <button onclick="fun1()">toggle</button>
+
+</body>
+<script>
+    // const par = document.createElement("p");
+    // const node = document.createTextNode(" this is node");
+    // const node1 = document.createTextNode(this_is_new_para);
+    // p1.appendChild(node);
+    // para.appendChild(node1);
+
+    // const element = document.getElementById("hello");
+    // const child = document.getElementById("para");
+    // child.appendChild(node);
+    // child.appendChild(node1);
+    function fun1() {
+        // var element = document.getElementById('print');
+        // if (element.className == "hello") {
+        //     element.className = "hello1";
+
+        // } else {
+        //     element.className = "hello";
+        // }
+        var element = document.getElementById("print");
+   element. setAttribute.toggle("hello");
+    }
+</script>
+
+</html>

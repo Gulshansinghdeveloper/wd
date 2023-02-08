@@ -1,0 +1,186 @@
+
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    padding: 0px 200px;
+    background-color: grey;
+}
+.img img{
+    width: 30px;
+    height: 30px;
+}
+.nav-bar1{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    }
+.nav-bar1 a{
+    color:grey;
+    text-decoration: none;
+}
+.logo img{
+    width:400px;
+    height:200px;
+}
+.nav2 {
+    font-size:medium;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    color: brown;
+    padding-top:5px;    
+    justify-content: space-between;    
+}
+.nav2 h2{
+    padding-top: 40px;
+}
+.nav2 input{
+    height: 20px;
+    width: 500px;
+    text-align: center;
+}
+.search-bar{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.search-bar input{
+    width: 300px;
+    height:30px;
+    justify-content: center;
+}
+.nav3 ul{
+    display: flex;
+    list-style: none;
+    padding:10px;
+    justify-content: space-around;
+    background-color: rgb(48, 116, 193);
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.aboutbox{
+    position:  absolute;
+    display: none;
+        
+}
+.img-box{
+    display: flex;
+    
+}
+.nav3 marquee{
+    color: rgb(48, 116, 193);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: white;
+}
+.row{
+    background-color: white;
+    
+}
+.row table td {
+    text-decoration:none;
+    text-align: center;
+    justify-content: space-around;
+    padding:10px;
+    border-radius: 20px;
+    color:rgb(48, 116, 193);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(227, 219, 219);
+} 
+.table ion-icon{
+    color:darkred;
+}
+.table{
+    background: linear-gradient(-45deg, rgb(219, 219, 219), white);
+}
+.col{
+    display: flex;
+    background-color: white;
+    padding:10px;
+}
+
+.form{
+    margin-left:15px;
+}
+
+.col table form{
+    justify-content: space-around;
+}
+.col table td{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:5px;
+    width:200px;
+    height: auto;
+    
+}
+.col form{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    width: 400px;
+    background: linear-gradient(-45deg, rgb(219, 219, 219), white);
+}
+.same {
+    padding: 10px;
+    text-align: left;    
+}
+
+.same  input{
+    text-align:right;   
+}
+.same legend{
+    background-color: grey;
+   padding: 10px;
+}
+.alert-section {
+    padding:10px;
+    background-color:  #f7f6e8;
+}
+.alert-section a{
+    text-decoration: none;
+    color: red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.alert-section table{
+    border: none;
+    padding:10px;
+}
+.footer{
+    background-color: rgb(48, 116, 193) ;
+}
+.footer table{
+    text-align: center;
+    color: white; 
+    /* color name */
+    color: #3f4;
+    /* hex code - lowest value - 0, heighest value - f (0-9-a-f)*/
+    color: rgb(0,150, 20);
+    /* lowest - 0, heighest - 255 (0-255) */
+    color: rgba(232, 211, 21, 0.6);
+    /* lowest - 0, heighest - 255 (0-255)  'a' represent opacity    */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+.newTag{    
+    color: blue;
+    animation-name: animTag;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animTag {
+    0%{color: blue;}
+    50%{color: orange;}
+    100%{color: blue;}
+    
+}

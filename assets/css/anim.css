@@ -1,0 +1,21 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.box {
+  background-color: green;
+  width:100px;
+  height:100px;
+  animation-name: animation;
+  position: relative;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes  animation {
+  0%{background-color: blue;left: 20px;right:50px;}
+  25%{background-color: green;left: 60px;right:100px;}
+  50%{background-color: brown;left: 100px;right:150px;}
+  75%{background-color: yellow;left: 90px;right:200px;}
+  100%{background-color: rgb(250, 39, 39);left: 20px;right:300px;} 
+}

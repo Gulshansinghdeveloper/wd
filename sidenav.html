@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    H1 {
+        color: rgb(9, 20, 139);
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .nav {
+        background-color: rgba(242, 7, 7, 0.517);
+        display: flex;
+    }
+
+    .button {
+        background-color: rgb(101, 1, 1);
+        color: white;
+        animation-iteration-count: infinite;
+        animation-name: animTag;
+        animation-duration: 2s;
+        margin: 5px;
+        width: 50px;
+    }
+
+    @keyframes animTag {
+        25% {
+            color: rgb(252, 33, 33);
+        }
+
+        50% {
+            color: rgb(245, 233, 10);
+        }
+
+        75% {
+            color: rgb(10, 245, 96);
+        }
+
+        100% {
+            color: rgb(2, 2, 248);
+        }
+
+    }
+
+    .sidenav {
+        margin-top: 43px;
+        height: 100%;
+        width: 0px;         
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(238, 195, 4);
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #dc5858;
+        display: block;
+        transition: 1s;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <h1>Code with fun</h1>
+        <button class="button" onclick="openNav()">open </button>
+        <button class="button" onclick="closeNav()">close</button>
+    </div>
+    <div id="mySidenav" class="sidenav">
+
+        <a href="#">login </a>
+        <a href="#">Contact</a>
+        <a href="#">about us</a>
+    </div>
+</body>
+<script>
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0px";
+    }
+</script>
+
+</html>

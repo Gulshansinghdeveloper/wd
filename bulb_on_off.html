@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    h1{
+    text-transform: uppercase;
+    font-style: italic;
+    text-underline-position: auto;
+    }
+    #button1{
+      color: crimson;
+      
+    }
+    #button2{
+      color:green;
+    }
+    
+    
+  </style>
+  
+<body>
+  <h1 >On Off switch use javascript</h1>
+  <div class="div1">
+  <img id="Image"onclick="turnOnOff()"src="/assets/image_1.png" height ="40%" width="30%">
+  </div>
+  <br>
+  <button id="button1" type="button"onclick="light(1)">Light On</button>
+  <button id="button2"type="button" onclick="light(0)">Light Off</button>
+</body>
+
+
+<script>
+    
+function light( change_image ) {
+  var change_image ;
+  if (change_image == 0) {
+    image = "/assets/image_1.png"
+  } else {
+    image = "/assets/image_2.png"
+  }
+  document.getElementById('Image').src = image;
+  
+}
+</script>
+
+</html>

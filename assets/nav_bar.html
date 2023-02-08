@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         .option a i{
+                display:none;
+            }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .nav_bar {
+            background-color: tomato;
+            font-size: 20px;
+            
+        }
+        .nav_bar ion-icon{
+            display: none;
+        }
+
+        .nav_bar img {
+            width: 50px;
+        }
+
+        .nav_bar a {
+            text-decoration: none;
+            padding: 10px;
+        }
+        @media(max-width:430px){
+           body .nav_bar a{ display: none;}
+                     
+        }
+       
+        @media(max-width:768px) {
+            body {
+                background-color: red;
+            }
+           
+        }
+
+        @media(min-width:768px) {
+            body {
+                background-color: aqua;
+            }
+          
+        }
+         
+    </style>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <nav class="option">
+            <img src="/assets/images/hummingbird-logo-D436A31661-seeklogo.com.png" alt="">
+            <a class="web_tab" href="">Home</a>
+            <a class="web_tab"href="">Contact</a>
+            <a class="web_tab"href="">About me </a>
+            <a class="icon"href="">Log in <i class="fa fa-bars" aria-hidden="true"></i></a>
+            <li ></li>
+        
+    </nav></div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+
+        }
+
+        .box2 {
+            width: 150px;
+            height: 100px;
+            background-color:black;
+            position: relative;
+           left: 50%;
+           transform: translate(-50% ,-50%);
+           top: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="width: 50%; text-align:right ;padding: 10px; ">
+        <center>
+            <form>
+                <legend>
+                    <h2>Form</h2>
+                </legend>
+                <label for="name">First name</label>
+                <input type="text"><br>
+                <label for="lname">Last name</label>
+                <input type="text"><br>
+                <label for="fname">Father's name</label>
+                <input type="text"><br>
+                <label for="DOB">DOB</label>
+                <input type="text"><br>
+                <label for="gender">Gender</label>
+                <label>
+                    <input type="radio" value="male" name="gender">male
+                </label>
+                <label>
+                    <input type="radio" value="female" name="gender">female
+                </label><br>
+                <label for="address">Address</label>
+                <textarea name="address" id="" cols="10" rows="10"></textarea><br>
+                <label>State :</label><select name="State" id=""><br>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Goa">Goa</option>
+                </select><br>
+                <label for="Pincode">Pincode<input type="text"></label><br>
+                <label for="Email">E mail<input type="email"></label><br>
+                <label for="number">Phone number<input type="number"></label><br>
+                <label for="language">language<input type="checkbox">English</label><br>
+                <label for="language">language<input type="checkbox">Hindi</label><br>
+                <label for="language">language<input type="checkbox">Telgu</label><br>
+                <label for="language">language<input type="checkbox">Bhojpuri</label><br>
+
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </center>
+
+    </div>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

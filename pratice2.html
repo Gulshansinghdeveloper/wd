@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="addData()" action="#">
+    <input type="text" id="username" name="username" autofocus>
+    <button  type="submit" id="button">insert data</button>
+    </form>
+    <div id="errmsg"></div>
+    <ul id="databox" ></ul>
+    <!-- <div id="datebox"></div> -->
+    <!-- <button onclick="getdata1('clicked on first button')">Date</button> -->
+</body>
+<script>
+    // function getdata1(){
+    //         document.getElementById('datebox').innerHTML = new Date();
+    //         document.getElementById('datebox').style.color ='red';
+    // }
+    // setInterval(getdata1,1000);
+    // document.getElementById("button").addEventListener("click",);
+    
+    let newdata = '';
+    function addData(){ 
+    if(document.getElementById('username').value == ''){
+        document.getElementById('errmsg').innerHTML = ' * Please Fill The Field';
+        setTimeout(function(){
+        document.getElementById('errmsg').innerHTML = ''},3000);
+        document.getElementById('errmsg').style.color = 'red';
+        document.getElementById('errmsg').style.fontSize = '14px';
+        document.getElementById('errmsg').style.fontWeight = 'bold';
+
+    }
+    
+    else{    
+        // let inputval = document.getElementById('username').value;
+        newdata +=  '<li>'+ document.getElementById('username').value  +" "+'<button onclick="reverse()">X</button>' +'</li>';
+        document.getElementById('databox').innerHTML = newdata;
+        document.getElementById('username').value = '';
+    }
+    }
+     function reverse() {
+    return this ; 
+  }
+
+</script>
+</html>

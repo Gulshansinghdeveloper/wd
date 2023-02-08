@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remove Element From Todo list</title>
+</head>
+
+<body>
+  <h2>My To-dos</h2>
+  <p>Number of to-dos: <span id="noOfTodos">0</span></p>
+  <ul id="todoList"></ul>
+</body>
+
+<script>
+// OUR TODOS
+let todosArr = [
+  { value: "write articles" },
+  { value: "code" },
+  { value: "play guitar" },
+  { value: "read" },
+];
+
+// GRAB OUR span and ul from DOM
+let todoList = document.getElementById("todoList");
+let noOfTodos = document.getElementById("noOfTodos");
+
+// A FUNCTION TO CREATE TODO
+const createTodo = (arr) => {
+  todoList.innerHTML = "";
+  arr.forEach((todo, id) => {
+    let list = document.createElement("li");
+    let spanWithValue = document.createElement("span");
+    let spanWithBtn = document.createElement("button");
+
+    spanWithValue.innerText = todo.value;
+    spanWithBtn.innerText = "X";
+    spanWithBtn.style.color = "red";
+
+    spanWithBtn.addEventListener("click", () => {
+      deleteTodo(id);
+    });
+
+    list.appendChild(spanWithValue);
+    list.appendChild(spanWithBtn);
+
+    todoList.appendChild(list);
+  });
+  noOfTodos.innerText = todosArr.length;
+};
+
+const deleteTodo = (index) => {
+  todosArr.splice(index, 1);
+  createTodo(todosArr);
+};
+window.addEventListener("load", () => {
+  createTodo(todosArr);
+});
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The bubbles Property</h2>
+
+<p>Click the button to find out if the event is a bubbling event:</p>
+
+<button onclick="myFunction(event)">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(event) { 
+  let x = event.bubbles;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

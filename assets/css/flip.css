@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.main-div{
+display:flex;
+background-color: rgb(22, 87, 250);
+color: aliceblue;
+font-family: Arial, Helvetica, sans-serif;
+justify-content: space-around;
+height: 45px;
+}
+.logo{
+    padding-top:5px;
+    text-align:center;
+    
+}
+.logo h1{
+    font-size:20px;
+    font-style:italic;
+}
+.logo h2{
+    font-size:10px;
+    font-style:italic;
+}
+.search{
+    padding-top: 8px;
+    
+}
+.search input{
+    height:25px;
+    width: 350px;
+    outline: none;
+    box-shadow: 5px 5px 5px #7fb4c1;
+    border: none;
+    border-radius: 2px;
+}
+.option{
+    padding:12px;
+}
+.option a{
+    padding: 15PX;
+    text-decoration:none;
+    color: aliceblue;
+}
+.body{
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.img-section1{
+    display:flex ;
+    height:130px;
+    border-bottom:groove;
+    justify-content: space-around;
+}
+
+.img-section1 div img{width: 100px; height: 80px;}
+
+.main1 h5{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,     sans-serif;
+    text-transform: capitalize;
+    color: black;
+}
+.img-scroll img{
+     width:1200px; 
+     height:auto;
+    padding: 20px 35px;
+} 
+.para{
+    font-size:x-small;
+    width: 1080px;
+    text-align: justify;
+}
+.img-section2 div img{width: 200px; height: 200px;}
+.img-section2{
+    display:flex ;
+    height:260px;
+    border-color: azure;
+    justify-content: space-around;
+}
+.img-section3 div img{width: 200px; height: 200px;}
+.img-section3{
+    display:flex ;
+    height:260px;
+    border-color: azure;
+    justify-content: space-around;
+}
+.img-section4 div img{width: 200px; height: 200px;}
+.img-section4{
+    display:flex ;
+    height:260px;
+    border-color: azure;
+    justify-content: space-around;
+}
+.main-table {
+    display: flex;
+    
+}
+.main-table div{
+    height: 200px;
+    width: 1200px;
+    padding: 30px 10px;
+}
+.table1{
+    background-color: rgb(2, 33, 61);  
+    color: whitesmoke;  
+}
+.table1 td{
+    font-size: small;
+}
+.table2{
+    background-color: rgb(2, 33, 61);  
+    color: whitesmoke; 
+   
+
+}
+.table2 td{
+    font-size: small;
+}

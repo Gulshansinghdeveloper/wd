@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.search {
+  position:relative;
+  display:inline-block
+}
+.search::after{
+  content: "search";
+  position: absolute;
+  top:0px;
+  left:100%;
+  background-color: green;
+}
+a{
+  text-decoration: none;
+  background-color: grey;
+}
+a:link {
+  color: red;
+}
+
+a:visited {
+  color:black;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: blue;
+}
+p{
+  font-size: 24px;
+}
+p::first-letter{
+  font-size: 34px;
+}
